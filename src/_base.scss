@@ -1,0 +1,72 @@
+// Fons Family
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+// Colors
+
+$color-cyan: hsl(220, 98%, 61%);
+$color-white: #fff;
+$gradient: linear-gradient(
+  to right bottom,
+  hsl(192, 100%, 67%),
+  hsl(280, 87%, 65%)
+);
+
+// Light Theme
+
+$color-very-light-gray: hsl(0, 0%, 98%);
+$color-very-light-grayish-blue: hsl(236, 33%, 92%);
+$color-light-grayish-blue-1: hsl(233, 11%, 84%);
+$color-dark-grayish-blue-1: hsl(233, 11%, 84%);
+$color-very-dark-grayish-blue-1: hsl(235, 19%, 35%);
+
+// Dark Theme
+
+$color-very-dark-blue: hsl(235, 21%, 11%);
+$color-very-dark-desaturated-blue: hsl(235, 24%, 19%);
+$color-light-grayish-blue-2: hsl(234, 39%, 85%);
+$color-light-grayish-blue-3: hsl(236, 33%, 92%); //hover effect
+$color-dark-grayish-blue-2: hsl(234, 11%, 52%);
+$color-very-dark-grayish-blue-2: hsl(233, 14%, 35%);
+$color-very-dark-grayish-blue-3: hsl(237, 14%, 26%);
+
+// Style
+
+$border-radius-small: 0.5rem;
+$border-radius-big: 10rem;
+
+// Breakpoints
+$bp-small: 26.25em; // 420px
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 10px
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: $color-white;
+}
+
+.container {
+  max-width: 55rem;
+  display: grid;
+  row-gap: 2rem;
+  margin: 4vw auto;
+  background-repeat: no-repeat;
+  background-color: $color-very-dark-blue;
+
+  @media only screen and (max-width: $bp-small) {
+    margin: 10vw auto;
+    max-width: 38rem;
+  }
+}

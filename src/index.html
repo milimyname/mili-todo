@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Todo app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  
+</head>
+<body class="container">
+
+  <header class="header">
+    <div class="header__box">
+      <h1 class="header__heading">Todo</h1>
+    </div>
+    <div class="todo header__todo">
+      <span class="todo__icon-background todo__hover"></span>
+      <input type="text" class="todo__input" placeholder="Create a new todo">
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="main__todos-box">
+      <div class="todo" id="6" draggable="true" data-checked="false">
+        <span class="todo__icon-background todo__hover"></span>
+        <p class="todo__paragraph">Complete online JS course</p>
+      </div>
+      <div class="todo" id="5" draggable="true" data-checked="false">
+        <span class="todo__icon-background todo__hover"></span>
+        <p class="todo__paragraph">Jog around the park 3x</p>
+      </div>
+      <div class="todo" id="4" draggable="true" data-checked="false">
+        <span class="todo__icon-background todo__hover"></span>
+        <p class="todo__paragraph">3 times meditation</p>
+      </div>
+      <div class="todo" id="3" draggable="true" data-checked="false">
+        <span class="todo__icon-background todo__hover"></span>
+        <p class="todo__paragraph">Read for 1 hour</p>
+      </div>
+      <div class="todo" id="2" draggable="true" data-checked="false">
+        <span class="todo__icon-background todo__hover"></span>
+        <p class="todo__paragraph">Puck up groceries</p>
+      </div>
+      <div class="todo" id="1" draggable="true" data-checked="false">
+        <span class="todo__icon-background todo__hover"></span>
+        <p class="todo__paragraph">Complete Todo App on Frontend Mentor</p>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <p class="nav__paragraph">
+        <span class="nav__items-left">6</span>
+        items left
+      </p>
+      <ul class="nav__list">
+        <item class="nav__item"><a href="#" class="nav__link nav__link--active">All</a></item>
+        <item class="nav__item"><a href="#" class="nav__link">Active</a></item>
+        <item class="nav__item"><a href="#" class="nav__link completed">Completed</a></item>
+      </ul>
+      <button class="nav__btn">Clear Completed</button>
+    </nav>
+  </main>
+
+  <nav class="mobile-nav nav">
+    <ul class="nav__list">
+      <item class="nav__item"><a href="#" class="nav__link nav__link--active">All</a></item>
+      <item class="nav__item"><a href="#" class="nav__link">Active</a></item>
+      <item class="nav__item"><a href="#" class="nav__link completed">Completed</a></item>
+    </ul>
+  </nav>
+
+  <footer class="footer">
+   <p class="footer__paragraph">Drag and drop to reorder list</p>
+  </footer>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://twitter.com/milimyname">Mili</a>.
+  </div>
+</body>
+</html>
